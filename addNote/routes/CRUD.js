@@ -3,6 +3,7 @@ const controller = require("../controllers/CRUDController")
 
 const router = Router();
 
-router.post("/", controller.addStudent)
+router.get("/:id", controller.getStudentByID)
+router.get("/", controller.getStudents)
 
 module.exports = router;
